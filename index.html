@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <style>
+      .custom-tooltip {
+        --bs-tooltip-bg: var(--bs-primary);
+      }
+      .custom-tooltips {
+        --bs-tooltip-bg: var(--bs-danger);
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar section -->
@@ -52,7 +61,10 @@
                 <a class="nav-link navbar__contact" href="#">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: rgba(255, 255, 255, 0.7);" href="#"
+                <a
+                  class="nav-link"
+                  style="color: rgba(255, 255, 255, 0.7)"
+                  href="#"
                   >|
                   <span class="navbar__consult">CALL NOW FOR A CONSULT</span>
                   <span class="navbar__number">123.456.7890</span></a
@@ -355,7 +367,7 @@
       <div class="row my-2 g-4">
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div
-            class="ttp red-tooltip organize__box py-2"
+            class="ttp organize__box py-2"
             data-bs-toggle="tooltip"
             data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
@@ -370,53 +382,83 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div id="tooltip" class="organize__box">
-            <span id="tooltipText"
-              >We’re experienced in our individual <br>
-              crafts and understand how each one of our <br>
-              roles impacts your plan holistically.
-            </span>
-            <p>Treatment Planning & Placement</p>
+          <div
+            class="ttp organize__box"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically."
+          >
+            <p>
+              Treatment Planning & Placement
+              <span class="organize__icon"
+                ><i class="bx bx-info-circle"></i
+              ></span>
+            </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div id="tooltip" class="organize__box py-2">
-            <span id="tooltipText"
-              >We’re experienced in our individual <br>
-              crafts and understand how each one of our <br>
-              roles impacts your plan holistically.
-            </span>
-            <p>Transportation & Logistics</p>
+          <div
+            class="ttp organize__box py-2"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically."
+          >
+            <p>
+              Transportation & Logistics
+              <span class="organize__icon"
+                ><i class="bx bx-info-circle"></i
+              ></span>
+            </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div id="tooltip__bottom" class="organize__box py-2">
-            <span id="tooltipText__bottom"
-              >We’re experienced in our individual <br>
-              crafts and understand how each one of our <br>
-              roles impacts your plan holistically.
-            </span>
-            <p>Insurance Advocacy</p>
+          <div
+            class="ttp organize__box py-2"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically."
+          >
+            <p>
+              Insurance Advocacy
+              <span class="organize__icon"
+                ><i class="bx bx-info-circle"></i
+              ></span>
+            </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div id="tooltip__bottom"  class="organize__box py-2">
-            <span id="tooltipText__bottom"
-              >We’re experienced in our individual <br>
-              crafts and understand how each one of our <br>
-              roles impacts your plan holistically.
-            </span>
-            <p>Employment Advocacy</p>
+          <div
+            class="ttp organize__box py-2"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically."
+          >
+            <p>
+              Employment Advocacy
+              <span class="organize__icon"
+                ><i class="bx bx-info-circle"></i
+              ></span>
+            </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div id="tooltip__bottom" class="organize__box py-2">
-            <span id="tooltipText__bottom"
-              >We’re experienced in our individual <br>
-              crafts and understand how each one of our <br>
-              roles impacts your plan holistically.
-            </span>
-            <p>Aftercare Planning</p>
+          <div
+            class="ttp organize__box py-2"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically."
+          >
+            <p>
+              Aftercare Planning
+              <span class="organize__icon"
+                ><i class="bx bx-info-circle"></i
+              ></span>
+            </p>
           </div>
         </div>
       </div>
@@ -480,7 +522,7 @@
     <!-- End of video session -->
 
     <!-- Footer session -->
-    <section  class="footer">
+    <section class="footer">
       <div class="container__wrapper">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
