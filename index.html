@@ -90,56 +90,64 @@
             <div class="form__section">
               <h3 class="contact__us text-center">Contact Us</h3>
               <!-- <form action=""> -->
-              <div class="form__grid">
-                <div class="form__group">
-                  <input
-                    type="text"
-                    id="first name"
-                    class="form__input"
-                    autocomplete="off"
-                    placeholder=" "
-                  />
-                  <label for="first name" class="form__label">First Name</label>
+              <form action="">
+                <div class="form__grid">
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      id="firstname"
+                      name="firstname"
+                      class="form__input"
+                      placeholder=" "
+                    />
+                    <label for="firstname" class="form__label"
+                      >First Name</label
+                    >
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      id="lastname"
+                      name="lastname"
+                      class="form__input"
+                      placeholder=" "
+                    />
+                    <label for="lastname" class="form__label">Last Name</label>
+                  </div>
+                  <div class="form__groups">
+                    <input
+                      type="text"
+                      id="businessemail"
+                      name="businessemail"
+                      class="form__inputs"
+                      autocomplete="off"
+                      placeholder=" "
+                    />
+                    <label for="businessemail" class="form__label"
+                      >Business Email</label
+                    >
+                  </div>
+                  <div class="form__groups">
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      class="form__inputs"
+                      autocomplete="off"
+                      placeholder=" "
+                    />
+                    <label for="company" class="form__label">Company</label>
+                  </div>
+                  <div class="form__group">
+                    <select class="select__group" id="mySelect">
+                      <option value="">Country</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="form__group">
-                  <input
-                    type="text"
-                    id="last name"
-                    class="form__input"
-                    autocomplete="off"
-                    placeholder=" "
-                  />
-                  <label for="last name" class="form__label">Last Name</label>
+                <div class="submit__button">
+                  <a href="#"><i class="bx bxs-send"></i> Submit</a>
                 </div>
-                <div class="form__groups">
-                  <input
-                    type="text"
-                    id="business email"
-                    class="form__inputs"
-                    autocomplete="off"
-                    placeholder=" "
-                  />
-                  <label for="email" class="form__label">Business Email</label>
-                </div>
-                <div class="form__groups">
-                  <input
-                    type="text"
-                    id="Company"
-                    class="form__inputs"
-                    autocomplete="off"
-                    placeholder=" "
-                  />
-                  <label for="company" class="form__label">Company</label>
-                </div>
-                <div class="form__group">
-                  <select class="select__group" id="mySelect">
-                    <option value="">Country</option>
-                  </select>
-                </div>
-              </div>
-              <div class="submit__button">
-                <a href="#"><i class="bx bxs-send"></i> Submit</a>
-              </div>
+              </form>
             </div>
             <!-- </form> -->
           </div>
