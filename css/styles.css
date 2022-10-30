@@ -153,6 +153,7 @@ body {
   /* background: none; */
   background: rgba(255, 255, 255, 0.04);
 }
+
 .select__group {
   width: 100%;
   height: 100%;
@@ -161,6 +162,9 @@ body {
   background-color: inherit;
   color: rgba(255, 255, 255, 0.7);
   padding-left: 1rem;
+}
+.error__input {
+  border: 2px solid red;
 }
 .form__input:hover,
 .form__inputs:hover,
@@ -211,7 +215,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.submit__button a {
+.submit__button button {
   text-decoration: none;
   color: #fff;
   background: #5bc8af;
@@ -221,6 +225,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 21.94px;
+  border: none;
 }
 .submit__button a:hover {
   color: #fff;
@@ -394,7 +399,6 @@ body {
 .organize__box:hover {
   color: #5bc8af;
 }
-
 
 /* tooltips */
 #tooltip {

@@ -23,6 +23,7 @@
       }
       .custom-tooltips {
         --bs-tooltip-bg: var(--bs-danger);
+        width: 200px;
       }
     </style>
   </head>
@@ -90,14 +91,18 @@
             <div class="form__section">
               <h3 class="contact__us text-center">Contact Us</h3>
               <!-- <form action=""> -->
-              <form action="">
+              <form action="" id="form">
                 <div class="form__grid">
                   <div class="form__group">
                     <input
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltips"
+                      data-bs-title="This field can’t be empty. Please fill it in."
                       type="text"
                       id="firstname"
                       name="firstname"
-                      class="form__input"
+                      class="form__input ttp-firstname"
                       placeholder=" "
                     />
                     <label for="firstname" class="form__label"
@@ -106,6 +111,10 @@
                   </div>
                   <div class="form__group">
                     <input
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltips"
+                      data-bs-title="This field can’t be empty. Please fill it in."
                       type="text"
                       id="lastname"
                       name="lastname"
@@ -116,6 +125,10 @@
                   </div>
                   <div class="form__groups">
                     <input
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltips"
+                      data-bs-title="This field can’t be empty. Please fill it in."
                       type="text"
                       id="businessemail"
                       name="businessemail"
@@ -129,6 +142,10 @@
                   </div>
                   <div class="form__groups">
                     <input
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltips"
+                      data-bs-title="This field can’t be empty. Please fill it in."
                       type="text"
                       id="company"
                       name="company"
@@ -144,8 +161,10 @@
                     </select>
                   </div>
                 </div>
-                <div class="submit__button">
-                  <a href="#"><i class="bx bxs-send"></i> Submit</a>
+                <div class="submit__button" id="submit">
+                  <button type="submit">
+                    <i class="bx bxs-send"></i>Submit
+                  </button>
                 </div>
               </form>
             </div>
@@ -560,5 +579,6 @@
         new bootstrap.Tooltip(t);
       });
     </script>
+    <script src="/js/validate.js"></script>
   </body>
 </html>
