@@ -25,9 +25,6 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.navbar__home {
-  /* border: 2px solid teal; */
-}
 .navbar__home a {
   padding-bottom: -2rem;
   color: #fff !important;
@@ -335,9 +332,6 @@ body {
   border-bottom-left-radius: 10px;
 }
 
-.carousel {
-  /* border: 3px solid red; */
-}
 .carousel-control-prev-icon {
   margin-right: 3rem;
   background-image: url("../assets/left.svg") !important;
@@ -397,7 +391,7 @@ body {
 .organize__box:hover {
   color: #5bc8af;
 }
-.organize__box i{
+.organize__box i {
   display: none;
 }
 
@@ -570,7 +564,7 @@ body {
     justify-content: flex-end;
     flex-wrap: wrap;
   }
-  .nav__line{
+  .nav__line {
     display: none;
   }
   .hero__section {
@@ -655,9 +649,6 @@ body {
   }
   .blog__text__line {
     grid-template-columns: 60% 40%;
-  }
-  .blog__text__line > div {
-    /* border: 4px solid red; */
   }
   .organize__text__line {
     grid-template-columns: 90% 10%;
