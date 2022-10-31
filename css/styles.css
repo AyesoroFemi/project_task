@@ -300,11 +300,16 @@ body {
   font-weight: 700;
 }
 
+.element {
+  transform: translateY(-2rem);
+}
+
 .box__wrapper {
-  width: 80%;
+  width: 78%;
   margin: auto;
   display: grid;
-  grid-template-columns: 30% 68%;
+  gap: 10px;
+  grid-template-columns: 32% 68%;
   justify-content: space-between;
 }
 
@@ -323,38 +328,43 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.box__wrapper > img {
-}
+
 .carousel__image {
   height: 100%;
   filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.12));
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 3px solid red;
 }
 
-.carousel__image > img {
-  object-fit: cover;
-  border: 3px solid red;
-}
-
-.carousel-control-prev span {
-  padding-left: 1rem;
-}
 .carousel {
   /* border: 3px solid red; */
 }
-.carousel-indicators {
-  transform: translateY(4rem);
+.carousel-control-prev-icon {
+  margin-right: 3rem;
+  background-image: url("../assets/left.svg") !important;
+  transform: translateY(-2rem);
 }
-.carousel-indicators > button {
-  border-radius: 50%;
-  background: #5bc8af !important;
-  width: 15px !important;
-  height: 2px !important;
+
+.carousel-control-next-icon {
+  margin-left: 3rem;
+
+  background-image: url("../assets/right.svg") !important;
+  transform: translateY(-2rem);
+}
+
+.carousel-indicators button {
+  transform: translateY(6rem);
+  height: 16px !important;
+  width: 16px !important;
+  margin: 0 16px !important;
+  border-radius: 100%;
+  background-color: #5bc8af !important;
 }
 
 /* Organize */
+.organize__wrapper {
+  margin-top: 8rem;
+}
 .organize__text__line {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -545,9 +555,6 @@ body {
   /* Large screen size */
 
   .hero__section {
-    /* background: url("../assets/bgMobile.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
     padding-bottom: 300px;
   }
 
@@ -576,6 +583,23 @@ body {
     padding: 0rem 0;
     text-align: center;
   }
+  .box__wrapper {
+    width: 100%;
+  }
+  .carousel-control-next {
+    background-color: #000;
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none !important;
+  }
+  .carousel-control-prev-icon {
+    display: none !important;
+  }
+
+  .box__item__wrapper {
+    padding: 0 2rem;
+  }
 }
 @media (max-width: 768px) {
   /* Medium screen size */
@@ -591,24 +615,27 @@ body {
   .organize__text__line {
     grid-template-columns: 90% 10%;
   }
+
+  .box__item__wrapper {
+    padding: 0 1rem;
+  }
+  .box__item__wrapper > div {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+  .box__item__wrapper > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  .box__item__wrapper > p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) {
   /* Mobile screen size */
-  .hero > div > p {
-    padding-bottom: 0rem;
-  }
-  .box__wrapper {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-  .box__wrapper > img {
-    transform: translateY(12rem);
-    padding-left: 2rem;
-  }
-  .box__item__wrapper {
-    padding: 10rem 2rem;
-  }
   .form__grid {
     display: block;
   }
@@ -628,7 +655,68 @@ body {
   .form__groups {
     margin: 1rem 0;
   }
+  .blog__wrapper{
+    padding-top: 0rem;
+  }
+  .blog__text__line {
+    grid-template-columns: 85% 15%;
+  }
+  .blog__text {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .blog__images {
     display: none;
+  }
+  .hero > div > p {
+    padding-bottom: 0rem;
+  }
+  .box__wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .box__wrapper > img {
+    transform: translateY(12rem);
+    padding-left: 2rem;
+  }
+  .box__item__wrapper {
+    padding: 10rem 2rem 2rem 2rem;
+    border-radius: 10px;
+  }
+  .box__wrapper img {
+    border-top-right-radius: 10px;
+  }
+  .box__item__wrapper > p {
+    font-size: 14px;
+    padding-right: 1rem;
+  }
+  .box__item__wrapper > div > img {
+    transform: translateY(-3rem);
+  }
+  .carousel__image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .carousel__image {
+    width: 70%;
+  }
+  .box__item__wrapper {
+    padding: 10rem 2rem 0rem 2rem;
+  }
+  .box__wrapper > img {
+    transform: translateY(8rem);
+    padding-left: 2rem;
+  }
+  .box__item__wrapper > div > img {
+    transform: translate(1rem, -3rem);
+  }
+  .box__item__wrapper > div {
+    transform: translateY(-4rem);
+  }
+  .box__item__wrapper > p {
+    padding-right: 0rem;
+    transform: translateY(-4rem);
   }
 }
