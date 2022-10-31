@@ -397,6 +397,9 @@ body {
 .organize__box:hover {
   color: #5bc8af;
 }
+.organize__box i{
+  display: none;
+}
 
 /* tooltips */
 #tooltip {
