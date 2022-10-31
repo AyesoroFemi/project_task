@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const tooltip = bootstrap.Tooltip.getOrCreateInstance(firstname, {
         trigger: "manual",
       }).show();
-      return
+      return;
     }
     if (!lastname.value) {
       lastname.classList.add("error__input");
-      const tooltip = bootstrap.Tooltip.getOrCreateInstance(lastname,{
+      const tooltip = bootstrap.Tooltip.getOrCreateInstance(lastname, {
         trigger: "manual",
       }).show();
       return;
     }
     if (!businessemail.value) {
       businessemail.classList.add("error__input");
-      const tooltip = bootstrap.Tooltip.getOrCreateInstance(businessemail,{
+      const tooltip = bootstrap.Tooltip.getOrCreateInstance(businessemail, {
         trigger: "manual",
       }).show();
       return;
@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (select.options[select.selectedIndex].value === "") {
       select.classList.add("error__input");
-      const tooltip = bootstrap.Tooltip.getOrCreateInstance(select,{
+      const tooltip = bootstrap.Tooltip.getOrCreateInstance(select, {
         trigger: "manual",
       }).show();
       return;
     }
 
-    window.location.href = "http://127.0.0.1:5501/thank.html";
+    window.location.href = "/thank.html";
 
     // validateInputs();
   });
@@ -112,4 +112,3 @@ document.addEventListener("DOMContentLoaded", () => {
     bootstrap.Tooltip.getOrCreateInstance(company).hide();
   });
 });
-
