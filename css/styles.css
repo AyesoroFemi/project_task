@@ -163,9 +163,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
   padding-left: 1rem;
 }
-.error__input {
-  border: 2px solid red;
-}
+
 .form__input:hover,
 .form__inputs:hover,
 .select__group:hover {
@@ -207,6 +205,9 @@ body {
   color: #fff;
   background-color: #589089;
 }
+.error__input {
+  border: 2px solid red;
+}
 
 .submit__button {
   margin-top: 3rem;
@@ -227,8 +228,9 @@ body {
   line-height: 21.94px;
   border: none;
 }
-.submit__button a:hover {
+.submit__button button:hover {
   color: #fff;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
 }
 /* End of input */
 
@@ -511,21 +513,40 @@ body {
 
 .video__section {
   margin-top: 100px;
-  border: 3px solid red;
-  background-color: lightblue;
+  background-image: url("../assets/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.watch__video {
+  padding-top: 2.9rem;
+  margin-bottom: 3rem;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
 }
 .video__head {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
+.video__head > h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
 .video__head > img {
   padding-bottom: 0.5rem;
 }
 
 .video__text {
-  width: 70%;
+  width: 80%;
   padding-left: 2.2rem;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
 }
 .video__text:last-child {
   padding-bottom: 90px;
@@ -655,7 +676,7 @@ body {
   .form__groups {
     margin: 1rem 0;
   }
-  .blog__wrapper{
+  .blog__wrapper {
     padding-top: 0rem;
   }
   .blog__text__line {

@@ -15,25 +15,28 @@ document.addEventListener("DOMContentLoaded", () => {
       const tooltip = bootstrap.Tooltip.getOrCreateInstance(firstname, {
         trigger: "manual",
       }).show();
-
+      return
     }
     if (!lastname.value) {
       lastname.classList.add("error__input");
       const tooltip = bootstrap.Tooltip.getOrCreateInstance(lastname,{
         trigger: "manual",
       }).show();
+      return;
     }
     if (!businessemail.value) {
       businessemail.classList.add("error__input");
       const tooltip = bootstrap.Tooltip.getOrCreateInstance(businessemail,{
         trigger: "manual",
       }).show();
+      return;
     }
     if (!company.value) {
       company.classList.add("error__input");
       const tooltip = bootstrap.Tooltip.getOrCreateInstance(company, {
         trigger: "manual",
       }).show();
+      return;
     }
 
     if (select.options[select.selectedIndex].value === "") {
@@ -41,7 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const tooltip = bootstrap.Tooltip.getOrCreateInstance(select,{
         trigger: "manual",
       }).show();
+      return;
     }
+
+    window.location.href = "http://127.0.0.1:5501/thank.html";
 
     // validateInputs();
   });
@@ -67,6 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
     businessemail.classList.remove("error__input");
     company.classList.remove("error__input");
     select.classList.remove("error__input");
+    bootstrap.Tooltip.getOrCreateInstance(firstname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(lastname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(businessemail).hide();
+    bootstrap.Tooltip.getOrCreateInstance(company).hide();
   });
   businessemail.addEventListener("input", (e) => {
     firstname.classList.remove("error__input");
@@ -74,6 +84,10 @@ document.addEventListener("DOMContentLoaded", () => {
     businessemail.classList.remove("error__input");
     company.classList.remove("error__input");
     select.classList.remove("error__input");
+    bootstrap.Tooltip.getOrCreateInstance(firstname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(lastname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(businessemail).hide();
+    bootstrap.Tooltip.getOrCreateInstance(company).hide();
   });
   company.addEventListener("input", (e) => {
     firstname.classList.remove("error__input");
@@ -81,6 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     businessemail.classList.remove("error__input");
     company.classList.remove("error__input");
     select.classList.remove("error__input");
+    bootstrap.Tooltip.getOrCreateInstance(firstname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(lastname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(businessemail).hide();
+    bootstrap.Tooltip.getOrCreateInstance(company).hide();
   });
   select.addEventListener("input", (e) => {
     firstname.classList.remove("error__input");
@@ -88,6 +106,10 @@ document.addEventListener("DOMContentLoaded", () => {
     businessemail.classList.remove("error__input");
     company.classList.remove("error__input");
     select.classList.remove("error__input");
+    bootstrap.Tooltip.getOrCreateInstance(firstname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(lastname).hide();
+    bootstrap.Tooltip.getOrCreateInstance(businessemail).hide();
+    bootstrap.Tooltip.getOrCreateInstance(company).hide();
   });
 });
 
