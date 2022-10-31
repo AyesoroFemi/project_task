@@ -7,12 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
@@ -66,7 +60,7 @@
                   class="nav-link"
                   style="color: rgba(255, 255, 255, 0.7)"
                   href="#"
-                  >|
+                  ><span class="nav__line">|</span>
                   <span class="navbar__consult">CALL NOW FOR A CONSULT</span>
                   <span class="navbar__number">123.456.7890</span></a
                 >
@@ -135,7 +129,9 @@
                       class="form__input"
                       placeholder=" "
                     />
-                    <label for="Business Email" class="form__label">Business Email</label>
+                    <label for="Business Email" class="form__label"
+                      >Business Email</label
+                    >
                   </div>
                   <div class="form__group">
                     <input
@@ -504,9 +500,9 @@
 
     <!-- watch the video session -->
     <section class="video__section">
-      <!-- <div class="container__wrapper"> -->
+      <div class="container__wrapper">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 left__section">
+          <div class="col-sm-12 col-md-12 col-lg-6 left__section">
             <h1 class="organize__text watch__video">
               <span class="organize__subtext text-white">WATCH</span> THE VIDEO
             </h1>
@@ -536,47 +532,9 @@
               instructions, etc.
             </p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="ratio ratio-16x9" style="height: 100%">
-              <!-- <iframe
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe> -->
-
-              <!-- <iframe
-                src="https://www.youtube.com/embed/AIAnQDkzcI0?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe> -->
-
-              <!-- <video
-                id="my_video"
-                controls="controls"
-                width="100%"
-                height="100%"
-                autoplay
-              >
-                <source
-                  src="/mixkit-spreading-chocolate-chunks-on-a-glazed-donut-44104-medium.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <div id="video_controls_bar">
-                <span
-                  class=""
-                  id="playpausebtn"
-                  onclick="playPause(this, 'my_video')"
-                >
-                  <img src="/Group 44.png" alt="" />
-                </span>
-              </div> -->
-            </div>
-          </div>
+          <!-- <div class="col-sm-12 col-md-6 col-lg-6"></div> -->
         </div>
-      <!-- </div> -->
+      </div>
     </section>
     <!-- End of video session -->
 
@@ -612,5 +570,17 @@
       });
     </script>
     <script src="/js/validate.js"></script>
+    <script>
+      function playPause(btn, vid) {
+        var vid = document.getElementById(vid);
+        if (vid.paused) {
+          vid.play();
+          btn.style.display = "url('/assets/Group 44.svg')";
+        } else {
+          vid.pause();
+          btn.style.display = "url('/assets/Group 44.svg')";
+        }
+      }
+    </script>
   </body>
 </html>

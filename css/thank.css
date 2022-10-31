@@ -18,9 +18,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 h1 {
   padding: 1rem 0;
+}
+
+.bx {
+  color: #589089;
+  font-size: 8rem;
+  font-weight: 900;
+}
+h5 {
+  font-size: 20px;
+}
+p {
+  margin-top: 1rem;
 }
