@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // window.location.href = "/thank.html";
+    window.location.href = "/thank.html";
 
     // validateInputs();
   });
